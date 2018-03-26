@@ -12,6 +12,7 @@
 This template deployed: Ubuntu VM,Storage account,Public IP address,Network interface, VNET. It then installs docker-ce and deploys Aqua CSP container
 
 ## Deploy
+Download the azuredeploy.parameters.json file and configure the required parameters. In order to deploy the template, follow the following guides:
 
 1. Using Azure CLI
 
