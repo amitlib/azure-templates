@@ -249,7 +249,7 @@
                 "autoUpgradeMinorVersion": true,
                 "settings": {
                     "fileUris": [
-                        "https://raw.githubusercontent.com/amitlib/scripts/master/deployAquaCSP.sh"
+                        "https://raw.githubusercontent.com/amitlib/azure-templates/master/aqua-csp-on-ubuntu-vm/deployAquaCSP.sh"
                     ],
                     "commandToExecute": "[concat('./deployAquaCSP.sh',' ',parameters('adminUsername'),' ',parameters('dockerHubUser'),' ',parameters('dockerHubPassword'),' ',variables('dockerRegistryServer'),' ',parameters('aquaCSPImage'),' ',variables('aquaContainerName'),' ',parameters('aquaDBPassword'),' ',parameters('aquaLicenseToken'),' ',parameters('aquaAdminPassword'))]"
                 }
