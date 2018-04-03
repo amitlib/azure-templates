@@ -6,6 +6,7 @@ AZURE_AD_PASSWORD=$4
 AZURE_TENANT_ID=$5
 
 if [ $ADD_ACR == "yes" ];then
+    sleep 30
     #Validate all parameters are set
     echo "step start: validate input parameters"
     if [[ -z "$AQUA_PASSWORD" ]] || [[ -z "$AZURE_AD_ID" ]] || [[ -z "$AZURE_AD_PASSWORD" ]] || [[ -z "$AZURE_TENANT_ID" ]];then
