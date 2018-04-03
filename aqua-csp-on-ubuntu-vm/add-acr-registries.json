@@ -6,6 +6,9 @@
 		"vmName": {
 			"type": "string"
 		},
+		"addACRReg": {
+			"type": "string"
+		},
 		"aquaAdminPassword": {
 			"type": "securestring"
 		},
@@ -31,7 +34,7 @@
 			"autoUpgradeMinorVersion": true,
 			"protectedSettings": {
 				"fileUris": ["https://raw.githubusercontent.com/amitlib/azure-templates/master/aqua-csp-on-ubuntu-vm/addACRRegistry.sh"],
-				"commandToExecute": "[concat('./addACRRegistry.sh',' ',parameters('aquaAdminPassword'),' ',parameters('azureADId'),' ',parameters('azureADPassword'),' ',parameters('azureTenantID'))]"
+				"commandToExecute": "[concat('./addACRRegistry.sh',' ',parameters('addACRReg'),' ',parameters('aquaAdminPassword'),' ',parameters('azureADId'),' ',parameters('azureADPassword'),' ',parameters('azureTenantID'))]"
 			}
 		}
 	}]
