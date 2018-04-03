@@ -12,11 +12,11 @@
 This template deployed: Ubuntu VM,Storage account,Public IP address,Network interface, VNET. 
 It then:
 1. Installs docker-ce and deploys Aqua CSP container
-2. Can add all Azure Container Registries that have serice principal access with contributer role.
+2. Add all Azure Container Registries that have Azure AD service principal with list permissions (contributer role).
 
 ## Deploy
 Download the azuredeploy.parameters.json file and configure the required parameters. 
-If you want to add all the Azure Container Registries, you will need to create a service principal with contributer role and configure it to your registries. 
+If you want to audo add all the Azure Container Registries, you will need to configure your ACRs to authenticate with Azure AD service principal. 
 
 https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aci
 
