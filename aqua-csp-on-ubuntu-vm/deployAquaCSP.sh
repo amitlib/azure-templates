@@ -12,6 +12,8 @@ AQUA_LICENSE_TOKEN=$8
 AQUA_ADMIN_PASSWORD=$9
 echo "step end: globals"
 
+echo "AQUA_ADMIN_PASSWORD: $AQUA_ADMIN_PASSWORD"
+
 echo "step start: install docker-ce"
 sudo apt-get update
 sudo apt-get install \
