@@ -247,7 +247,7 @@
                 "type": "CustomScript",
                 "typeHandlerVersion": "2.0",
                 "autoUpgradeMinorVersion": true,
-                "settings": {
+                "protectedSettings": {
                     "fileUris": [
                         "https://raw.githubusercontent.com/amitlib/azure-templates/master/aqua-csp-on-ubuntu-vm/deployAquaCSP.sh"
                     ],
